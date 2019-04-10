@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 
-import Clock from './components/clock'
+import Layout from './components/layout'
 import './App.css';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App App-header">
-        <Clock />
+    return(
+      <div className="flex-row">
+        <div>
+        <p>here would be the time!</p>
+        </div>
+          <div>
+            <p>here would be the reload icon</p>
+          </div>
       </div>
     );
   }
