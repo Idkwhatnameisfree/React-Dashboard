@@ -1,11 +1,14 @@
 
 import React, { Component } from "react";
+import Clock from "./clock";
+import Reload from './reload'
+import './styles.css'
 
-export class image extends Component {
+export class Image extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null
+      data: []
     };
   }
   componentDidMount() {
@@ -17,12 +20,13 @@ export class image extends Component {
 
   render() {
     return (
-      <div>
-        <h1>hi</h1>
-        <img alt="random" src={this.state.data} />
-      </div>
+
+ <div className="img" style={{ backgroundImage: `url(${this.state.data})` }}>
+<Clock />
+<Reload />
+</div>
     );
   }
 }
 
-export default image;
+export default Image;
