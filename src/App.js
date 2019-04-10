@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import Image from "./components/image";
+import Clock from "./components/clock";
 import Layout from './components/layout'
 import './App.css';
 
@@ -8,11 +9,12 @@ class App extends Component {
     return(
       <div className="flex-row">
         <div>
-        <p>here would be the time!</p>
+             
+        <Clock />
         </div>
           <div>
-            <p>here would be the reload icon</p>
-          </div>
+             <Image />
+          </div>         
       </div>
     );
   }
